@@ -1,2 +1,2 @@
 # CafeMenu
- Learning Basic CSS by Build a CafeMenu
+ Learning and remembering Basic CSS by Building a CafeMenu from freecodecamp
