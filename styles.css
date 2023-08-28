@@ -1,10 +1,23 @@
 body{
-    /* É possível, também, mudar a família do da fonte do texto.
-    com a propriedade 'font-family' é possível mudarmos o valor para
-    'sans-serif'.*/
-    font-family: sans-serif;
-    background-image: url(Resources/beans.jpg)
+    /* * É possível, também, mudar a família do da fonte do texto.
+    * *com a propriedade 'font-family' é possível mudarmos o valor para
+    * *'sans-serif'.*/
     
+    /* * A propriedade pading pode ser utilizada dentro do corpo do texto
+    * * para dar mais espaço ao texto.
+    * */
+    font-family: sans-serif;
+    background-image: url(Resources/beans.jpg);
+    padding: 20px;
+}
+
+hr {
+    height: 3px;
+    background-color: brown;
+    /* As cores das bordas também podem ser mudadas usando o atributo
+    'border-color'*/
+    border-color: brown;
+    height: 2px;
 }
 
 h1, h2, p {
@@ -75,7 +88,9 @@ por questões de compartimentalização*/
 }
 
 .item p{
-    display: inline-block
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
 /* Temos usado o elemento <div> para editar as propriedades de estilo. Mas existe
