@@ -1,8 +1,30 @@
 body{
+    /* É possível, também, mudar a família do da fonte do texto.
+    com a propriedade 'font-family' é possível mudarmos o valor para
+    'sans-serif'.*/
+    font-family: sans-serif;
     background-image: url(Resources/beans.jpg)
+    
 }
-h1, h2, p{
- text-align: center;
+
+h1, h2, p {
+    text-align: center;
+  }
+
+h1, h2{
+  font-family: Impact, serif;
+ 
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+
+.established{
+    font-style: italic;
+    text-align: center;
 }
 /*Vamos adicionar um estilo para que a propriedade do fundo do elemento <body>
 seja mudado para 'brown'. O nome da propriedade é chamada de 'background-color': e o atributo
@@ -19,10 +41,25 @@ por questões de compartimentalização*/
     as configurações da propriedade 'margin-left e margin-right' para 'auto'. Imaginar
     a margem como um espaço invisivel ao redor do elemento é o jeito mais fácil de utilizar essas
     duas propriedades
+
+    Podemos adicicionar algum espaço entre o conteúdo e os seus lados com diversas
+    propriedades de espaçamento ou 'padding'
+    Vamos acrescentar as propriedades 'padding-left' e padding-right' ao menu com os valores
+    de 20px.
+    Podemos acrescentar 20px aos lados, se todos forem usados, usando a propriedade
+    'padding', pois somente ela é usada.
+
+    Nosso menu atualmente toma 80% do tamanho do corpo do elemento. Em uma tela grande,
+    os itens e os seus valores aparecem bem distantes um dos outros.
+    Podemos resolver isso com a propriedade 'max-width para prevenir que o menu fique largo
+    demais.
     */
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: burlywood;
+    padding: 20px;
+
     /*Como os conteúdos do menu são grãos de café, nada melhor que mudar a imagem do menu
     para uma imagem de café, podemos fazer isso usando a propriedade background-image e selecionando
     o valor para o local onde a imagem está localizada.*/
