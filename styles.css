@@ -1,0 +1,61 @@
+body{
+    background-image: url(Resources/beans.jpg)
+}
+h1, h2, p{
+ text-align: center;
+}
+/*Vamos adicionar um estilo para que a propriedade do fundo do elemento <body>
+seja mudado para 'brown'. O nome da propriedade é chamada de 'background-color': e o atributo
+é chamado de 'brown', para a cor brown*/
+
+/*O elemento div definirá, a partir de agora, a cor de fundo do elemento body,
+por questões de compartimentalização*/
+.menu{
+    width: 80%;
+    /*atualmente o elemento div está especificado em pixels, podemos definir a propriedade
+    do elemento para que tome 80% do elemento <body>
+    
+    Queremos centralizar o elemento <div> horizontalmente. Podemos fazer isso para definir
+    as configurações da propriedade 'margin-left e margin-right' para 'auto'. Imaginar
+    a margem como um espaço invisivel ao redor do elemento é o jeito mais fácil de utilizar essas
+    duas propriedades
+    */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    /*Como os conteúdos do menu são grãos de café, nada melhor que mudar a imagem do menu
+    para uma imagem de café, podemos fazer isso usando a propriedade background-image e selecionando
+    o valor para o local onde a imagem está localizada.*/
+}
+.flavor, .dessert{
+    /* Vamos alinhar o texto à esquerda usando a propriedade 'text-align' left*/
+    text-align: left;
+    width: 75%;
+}
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+.item p{
+    display: inline-block
+  }
+
+/* Temos usado o elemento <div> para editar as propriedades de estilo. Mas existe
+um seletor de classe que realiza esse trabalho. Para isso, podemos mudar o seletor de
+classe mudando o seletor de estilo de classe para .menu. O ponto antes do nome da classe
+é mandatório.
+
+/*Não queremos que o elemento div tome toda a largura da página, por isso, podemos criar um
+seletor de largura chamado 'width' que vai definir que o elemento <div>
+tomará somente 300px de largura.
+/*Sobre style. Devemos usar os arquivos do elemento <style> em um arquivo externo
+chamado style.css; este arquivo será utilizado para guardar todos
+os estilos personalizados em um arquivo separado.
+                
+*/
+            
+/*Quando você utilizar diversos 'seletores' de
+elementos igual valor, é possível criar uma lista de seletores, cada um separados
+ por ponto e vírgula*/
+        

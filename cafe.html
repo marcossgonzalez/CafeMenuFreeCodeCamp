@@ -5,15 +5,10 @@
         <title>
             Café Menu
         </title>
-        <style>
-            h1, h2, p{
-                text-align: center;
-            }
-            
-            /*Quando você utilizar diversos 'seletores' de
-            elementos igual valor, é possível criar uma lista de seletores, cada um separados
-            por ponto e vírgula*/
-        </style>
+        <link href="styles.css" rel="stylesheet">
+        <!--O elemento link com atributo href referencia o stylesheet
+        a ser utilizado numa página com nome diferente de index.html-->
+
         <!--Você pode adicionar um style a um <elemento> especificicando
             dentro do elemento <style> dessa maneira:
                 element {
@@ -22,16 +17,61 @@
             Podemos alinhar a propriedade do elemento h1 ao definir a configuração
             value para center - que alinha o texto ao centro da página,
             com a configuração text-align - que alinha o local do texto.-->
+        <!--Para o estilo da página ser similar no site mobile é necessário
+        adicionar um elemento <meta> com um atributo chamado 'content'.
+        No atributo 'content' vai ser contido o seguinte código:
+    "width=device-width, initial-scale=1.0"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Perceba que o elemento possui auto-fechamando o self-enclosure-->
     </head>
     <body>
+        <!-- O elemento <div> é usado para propósito de edição de layout.
+            Vamos adicionar um elemento <div> dentro do elemento <body> e mover todos
+                os outros elementos para dentro do elemento <div>-->
         <!--Lembre-se o elemento <main> fica dentro do elemento <body>-->
-            <main>
-                <h1>CAMPER CAFE</h1>
-                <p>Est. 2020</p>
-                <section>
-                    <h2>Coffee</h2>
-                </section>
-            </main>
+        <!--Devemos adicionar um atributo menu à ao elemento div para
+        que o seletor de classe '.menu' seja utilizado no arquivo de estilos.-->
+            <div class="menu">
+                <main>
+                    <h1>CAMPER CAFE</h1>
+                    <p>Est. 2020</p>
+                    <section>
+                        <h2>Coffee</h2>
+                        <!--Dentro do elemento <artigo> vários elementos
+                                são alocados. Nesse caso podemos colocar o nome do café,
+                            seu sabor e seu preço.
+                        Vemos adicionar dentro do elemento <article> o primeiro elemento "French Vanilla" e o segundo
+                            "3.00"-->
+                            <article class="item">
+                                <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                            </article>
+                            <article class="item">
+                                <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                                </article>
+                              <article class="item">
+                                <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                                
+                              </article>
+                              <article class="item">
+                                <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                                
+                              </article>
+                              <article class="item">
+                                <p class="flavor">Mocha</p><p class="price">4.50</p>
+                                
+                              </article>
+
+                        
+                    </section>
+                    <section>
+                        <h2>Desserts
+                        </h2>
+                        <article class="item">
+                        <p class="dessert">Donut</p><p class="price">1.50</p>
+                    </article>
+                    </section>
+                </main>
+            </div>
     </body>
     <footer>
 
