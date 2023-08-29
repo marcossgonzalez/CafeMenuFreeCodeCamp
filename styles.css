@@ -85,13 +85,19 @@ por questões de compartimentalização*/
 .price{
     text-align: right;
     width: 25%;
+    font-size: 18px;
 }
 
 .item p{
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 18px;
   }
+
+.bottom-line{
+    margin-top: 25px;
+}
 
 /* Temos usado o elemento <div> para editar as propriedades de estilo. Mas existe
 um seletor de classe que realiza esse trabalho. Para isso, podemos mudar o seletor de
@@ -109,5 +115,20 @@ os estilos personalizados em um arquivo separado.
             
 /*Quando você utilizar diversos 'seletores' de
 elementos igual valor, é possível criar uma lista de seletores, cada um separados
- por ponto e vírgula*/
+ por ponto e vírgula
+ /** Podemos começar a estilizar o footer agora
+ /**FOOTER
+  */
+footer{
+    font-size: 14px;
+/** O valor padrão, em cores, para qualquer valor que ainda não foi clicado é azul
+* *O o valor padrão, em cores, para qualquer valor que já foi clicado é tipicamente púrpura.
+* * Vamos adicionar a mesma coisa para o link independentemente do valor clicado usando a cor preta.
+*/
+}
+a{
+    color: black;
+}
+/*
+
         
