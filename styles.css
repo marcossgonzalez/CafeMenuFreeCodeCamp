@@ -1,43 +1,54 @@
-body{
-    /* * É possível, também, mudar a família do da fonte do texto.
+body {
+  /* * É possível, também, mudar a família do da fonte do texto.
     * *com a propriedade 'font-family' é possível mudarmos o valor para
     * *'sans-serif'.*/
-    
-    /* * A propriedade pading pode ser utilizada dentro do corpo do texto
+
+  /* * A propriedade pading pode ser utilizada dentro do corpo do texto
     * * para dar mais espaço ao texto.
     * */
-    font-family: sans-serif;
-    background-image: url(Resources/beans.jpg);
-    padding: 20px;
+  font-family: sans-serif;
+  background-image: url(Resources/beans.jpg);
+  padding: 20px;
 }
 
 hr {
-    height: 3px;
-    background-color: brown;
-    /* As cores das bordas também podem ser mudadas usando o atributo
+  height: 3px;
+  background-color: brown;
+  /* As cores das bordas também podem ser mudadas usando o atributo
     'border-color'*/
-    border-color: brown;
-    height: 2px;
+  border-color: brown;
+  height: 2px;
 }
 
-h1, h2, p {
-    text-align: center;
-  }
+h1,
+h2,
+p {
+  text-align: center;
+}
 
-h1, h2{
+h1,
+h2 {
   font-family: Impact, serif;
- 
 }
-h1{
-    font-size: 40px;
+h1 {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
 }
-h2{
-    font-size: 30px;
+h2 {
+  font-size: 30px;
 }
 
-.established{
-    font-style: italic;
-    text-align: center;
+.established {
+  font-style: italic;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
 }
 /*Vamos adicionar um estilo para que a propriedade do fundo do elemento <body>
 seja mudado para 'brown'. O nome da propriedade é chamada de 'background-color': e o atributo
@@ -45,9 +56,9 @@ seja mudado para 'brown'. O nome da propriedade é chamada de 'background-color'
 
 /*O elemento div definirá, a partir de agora, a cor de fundo do elemento body,
 por questões de compartimentalização*/
-.menu{
-    width: 80%;
-    /*atualmente o elemento div está especificado em pixels, podemos definir a propriedade
+.menu {
+  width: 80%;
+  /*atualmente o elemento div está especificado em pixels, podemos definir a propriedade
     do elemento para que tome 80% do elemento <body>
     
     Queremos centralizar o elemento <div> horizontalmente. Podemos fazer isso para definir
@@ -67,36 +78,41 @@ por questões de compartimentalização*/
     Podemos resolver isso com a propriedade 'max-width para prevenir que o menu fique largo
     demais.
     */
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: burlywood;
-    padding: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: burlywood;
+  padding: 20px;
 
-    /*Como os conteúdos do menu são grãos de café, nada melhor que mudar a imagem do menu
+  /*Como os conteúdos do menu são grãos de café, nada melhor que mudar a imagem do menu
     para uma imagem de café, podemos fazer isso usando a propriedade background-image e selecionando
     o valor para o local onde a imagem está localizada.*/
 }
-.flavor, .dessert{
-    /* Vamos alinhar o texto à esquerda usando a propriedade 'text-align' left*/
-    text-align: left;
-    width: 75%;
+.flavor,
+.dessert {
+  /* Vamos alinhar o texto à esquerda usando a propriedade 'text-align' left*/
+  text-align: left;
+  width: 75%;
 }
-.price{
-    text-align: right;
-    width: 25%;
-    font-size: 18px;
+.price {
+  text-align: right;
+  width: 25%;
+  font-size: 18px;
 }
 
-.item p{
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
 
-.bottom-line{
-    margin-top: 25px;
+.bottom-line {
+  margin-top: 25px;
+}
+
+.address {
+  margin-bottom: 5px;
 }
 
 /* Temos usado o elemento <div> para editar as propriedades de estilo. Mas existe
@@ -112,23 +128,41 @@ chamado style.css; este arquivo será utilizado para guardar todos
 os estilos personalizados em um arquivo separado.
                 
 */
-            
+
 /*Quando você utilizar diversos 'seletores' de
 elementos igual valor, é possível criar uma lista de seletores, cada um separados
  por ponto e vírgula
  /** Podemos começar a estilizar o footer agora
  /**FOOTER
   */
-footer{
-    font-size: 14px;
-/** O valor padrão, em cores, para qualquer valor que ainda não foi clicado é azul
+footer {
+  font-size: 14px;
+  /** O valor padrão, em cores, para qualquer valor que ainda não foi clicado é azul
 * *O o valor padrão, em cores, para qualquer valor que já foi clicado é tipicamente púrpura.
 * * Vamos adicionar a mesma coisa para o link independentemente do valor clicado usando a cor preta.
 */
 }
-a{
-    color: black;
+a {
+  color: black;
 }
-/*
+/*Você pode mudar as propriedades de um link para que um link mude de cor
+para quando for realmente visitado usando o pseudo-seletor 'a:visited'{
+    nome da propriedade: valor da propriedade; }
 
-        
+    Você também pode mudar as propriedades de um link quando um mouse passa por cima do link
+    usando um pseudo-selector que se apresenta dessa maneira a:hover{
+        nome da propriedade: valor da pripriedade; }.
+    
+    Você pode mudar a propriedade de um link quando ele realmnte está sendo clicado
+    usando o pseudo-selector dessa maneira a:active {
+        nome da propriedade: valor da propriedade; }
+*/
+a:visited {
+  color: black;
+}
+a:hover {
+  color: brown;
+}
+a:active {
+  color: brown;
+}
